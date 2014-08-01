@@ -1,0 +1,19 @@
+{
+  "name": "short-id-gen",
+  "version": "1.0.0",
+  "description": "Build short IDs (4-6 chars) with numbers, uppercase- and lowercase-letters.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "short",
+    "ID",
+    "generator",
+    "shortURL",
+    "URL"
+  ],
+  "author": "Jannik Sommerfeld",
+  "license": "MIT",
+  "dependencies": {}
+}
