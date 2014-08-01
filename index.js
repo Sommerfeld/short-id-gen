@@ -1,8 +1,6 @@
 /*
 	Short-ID-Generator
 	by Jannik Sommerfeld
-
-	Generate 62base IDs with 6 characters.
 */
 
 var valueToChar = function(value) {
