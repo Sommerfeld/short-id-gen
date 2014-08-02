@@ -27,7 +27,36 @@ var valueToString = function(value) {
 	}
 }
 
-exports.generate = function () {
-	var random = Math.floor(Math.random()*2000000000)+1000000
+exports.generate = function (minLength, maxLength) {
+
+	// Validation Check
+	if (minLength <= 0 || minLength > maxLength) {
+		console.log(new Error('Invalid Values. (short-id-gen)'))
+		return -1
+	}
+
+	// Default Length (0 params)
+	if (typeof minLength === 'undefined') {
+		minLength = 4
+		maxLength = 6
+	}
+
+	// if exact length (1 param)
+	if (typeof maxLength === 'undefined') {
+        maxLength = minLength
+    }
+
+	var minRandom, maxRandom, random
+
+	if (minLength == 1) {
+		minRandom = 0 // as opposed to 1
+	} else {
+		minRandom = Math.pow(62, minLength - 1)
+	}
+
+	maxRandom = Math.pow(62, maxLength) - 1
+	
+	random = Math.floor(Math.random() * (maxRandom - minRandom) + minRandom)
+
 	return valueToString(random)
 }
