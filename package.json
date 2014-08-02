@@ -1,7 +1,7 @@
 {
   "name": "short-id-gen",
-  "version": "1.0.0",
-  "description": "Build short IDs (4-6 chars) with numbers, uppercase- and lowercase-letters.",
+  "version": "1.1.2",
+  "description": "Build short IDs with numbers, uppercase- and lowercase-letters. Pass number of characters (exact or min+max) as param.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +15,9 @@
   ],
   "author": "Jannik Sommerfeld",
   "license": "MIT",
-  "dependencies": {}
+  "dependencies": {},
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/Sommerfeld/short-id-gen"
+  }
 }
