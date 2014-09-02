@@ -13,8 +13,8 @@ This is a quick'n'dirty-tool. It's only used for public IDs - something like sho
 ## Parameters
 
 - () - 0 params -> Default lenght
-- (x) - 1 param -> Exact length
-- (x,y) - 2 params -> Min + max length
+- (x) - 1 param -> Exact number of characters
+- (x,y) - 2 params -> Min + max number of characters
 
 ## Usage
 
